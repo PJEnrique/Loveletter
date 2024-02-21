@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Love Letter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="question-container">
+            <p class="question-text" id="question">Hello mahal ko! 💕</p>
+            <div class="button-container">
+                <button id="continue-button" onclick="showQuestions()">Continue</button>
+                <button id="yes-button" style="display: none;" onclick="changeQuestion('Yes')">Yes</button>
+                <button id="no-button" style="display: none;" class="unclickable">No</button>
+            </div>
+            <div class="button-container">
+                <button onclick="askForPermissionAndPlayAudio()" id="toggle-button">Audio play</button>
+            </div>
+            <div class="answer-container" id="answer-container">
+                <p class="answer" id="answer"></p>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="GrowOldWithYou.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
